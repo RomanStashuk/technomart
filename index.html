@@ -11,7 +11,7 @@
 <body>
     <header class="main-header">
 
-        <div class="header-top">
+        <div class="main-header__header-top header-top">
             <div class="container">
                 <a class="header-top__logo logo">
                     <img src="img/icons/logo.svg" width="108" height="18" alt="Логотип магазина Техномарт">
@@ -27,7 +27,7 @@
                     </label>
                 </form>
                 <a href="#" class="header-top__link header-top__link_bookmarks">
-                    <svg class="header-top__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve" fill="#000000">
+                    <svg class="header-top__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 14 16" xml:space="preserve" fill="#000000">
                         <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765 C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z"/>
                     </svg>
                     Закладки:&nbsp;<span id="bookmarks-counter">0</span>
@@ -44,49 +44,49 @@
             </div>
         </div>
 
-        <div class="header-middle">
-            <p class="header-middle__info">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="header-middle container ">
+            <p class="header-middle__info">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</p>
             <div class="header-middle__contacts">
                 <a href="tel:+78125550555" class="header-middle__phone">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
+                    <svg class="header-middle__icon_phone" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" xml:space="preserve">
 		                <path fill="#B7BFC8" d="M15.572,18.985c-0.312,0-0.629,0-0.941,0c-4.129-0.488-7.157-2.408-9.359-4.864 c-2.21-2.461-3.954-5.629-4.294-9.893c0-0.382,0-0.762,0-1.144C1.056,2.31,1.437,1.78,1.876,1.327 C2.425,0.766,3.25,0.044,4.002,0.019c0.554-0.018,1.5,0.38,1.879,0.899C6.21,1.364,6.385,2.257,6.537,2.921 c0.154,0.671,0.505,1.643,0.408,2.289C6.797,6.217,5.458,6.644,5.066,7.376c1.307,3.135,3.443,5.439,6.293,7.031 c0.715-0.392,1.346-1.572,2.332-1.595c0.359-0.009,0.818,0.178,1.184,0.286c0.402,0.121,0.75,0.275,1.104,0.408 c0.596,0.224,1.648,0.521,2.004,1.021c0.365,0.513,0.57,1.356,0.49,1.879C18.309,17.447,16.594,18.603,15.572,18.985z"/>              
                     </svg>
                     +7 (812) 555-05-55
                 </a>
                 <address class="header-middle__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
             </div>
-            <div class="header-middle__user-block">
-                <a href="#" class="user-block__link">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
-	                    <polygon fill="#32425C" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
-                        <path fill="#32425C" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
+            <div class="header-middle__user-block user-block">
+                <a href="#" class="user-block__link user-block__link_login">
+                    <svg class="user-block__icon user-block__icon_login" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve" fill="#c5c5c5">
+	                    <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
+                        <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027 v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
                     </svg>
                     Войти</a>
                 <a href="#" class="user-block__link">Регистрация</a>
             </div>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav container">
             <ul class="main-nav__list">
-                <li class="nav-item">
+                <li class="main-nav__item main-nav__link_current">
                     <a href="#" class="main-nav__link">Главная</a>
                 </li>
-                <li class="nav-item">
+                <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Компания</a>
                 </li>
-                <li class="nav-item">
+                <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Каталог</a>
                 </li>
-                <li class="nav-item">
+                <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Новости</a>
                 </li>
-                <li class="nav-item">
+                <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Спецпредложения</a>
                 </li>
-                <li class="nav-item">
+                <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Доставка</a>
                 </li>
-                <li class="nav-item">
+                <li class="main-nav__item">
                     <a href="#" class="main-nav__link">Контакты</a>
                 </li>
             </ul>
