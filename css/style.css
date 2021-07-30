@@ -102,8 +102,16 @@ img {
     color: #ffffff;
     cursor: pointer;
 }
-
-
+.btn_red {
+    background-color: #ee3643;
+}
+.btn_red:hover,
+.btn-red:focus {
+    background-color: #ca2c37;
+}
+.btn_red:active {
+    background-color: #ba2732;
+}
 
 /* Header styles */
 /* Top part */
@@ -352,7 +360,7 @@ img {
 /* Main content */
 /* Promo section */
 .promo {
-    margin-top: 60px;
+    margin-top: 59px;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(3, 300px);
@@ -361,6 +369,8 @@ img {
 .promo__item {
     width: 300px;
     min-height: 123px;
+    padding-top: 20px;
+    padding-left: 24px;
     position: relative;
 }
 .promo__item_yellow {
@@ -377,12 +387,16 @@ img {
 }
 .promo__item_new::after {
     content: "";
-    
+    width: 60px;
+    height: 59px;
+    position: absolute;
+    background: url("../img/icons/new-flag.png") no-repeat;
+    top: 0;
+    right: 0;
 }
 .promo__title {
-    min-width: 165px;
-    margin-left: 25px;
-    margin-top: 20px;
+    margin: 0;
+    margin-bottom: 13px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
@@ -390,15 +404,73 @@ img {
 }
 .promo__btn {
     width: 135px;
-    position: absolute;
-    left: 25px;
-    bottom: 22px;
     background-color: rgba(0, 0, 0, 0.1);
 }
+.promo__btn:hover,
+.promo__btn:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.promo__btn:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.promo__icon-wrap {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 23px;
+    right: 28px;
+}
+/*
+    Promo 
+    Slider
+*/
 .promo__slider {
-    width: 620px;
-    height: 266px;
     grid-column: 1 / 3;
     grid-row: 2 / 4;
     background-color: grey;
+}
+.slider {
+    width: 620px;
+    height: 266px;
+    position: relative;
+}
+.slider__slide {
+    margin: 0;
+    display: none;
+    position: relative;
+}
+.slider__slide_active {
+    display: block;
+}
+.slider__image {
+    width: 100%;
+}
+.slider__title,
+.slider__subtitle,
+.slider__btn_open-all {
+    position: absolute;
+}
+.slider__title {
+    margin: 0;
+    top: 23px;
+    left: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.slider__subtitle {
+    top: 61px;
+    left: 25px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.slider__btn_open-all {
+    min-width: 195px;
+    bottom: 22px;
+    left: 25px;
 }
