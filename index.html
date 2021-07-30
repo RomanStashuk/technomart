@@ -99,26 +99,58 @@
             <h2 class="visually-hidden">Промо блок</h2>
             <div class="promo__item promo__item_yellow promo__item_new">
                 <h3 class="promo__title">Материалы</h3>
-                <a href="" class="promo__btn btn">на любой вкус</a>
+                <a href="" class="promo__btn btn" aria-label="Материалы на любой вкус">на любой вкус</a>
+                <div class="promo__icon-wrap">
+                    <img src="img/icons/icon-materials.svg" alt="" class="promo__icon" width="44px" height="65px">
+                </div>
             </div>
             <div class="promo__item promo__item_blue">
                 <h3 class="promo__title">Инструмент</h3>
-                <a href="" class="promo__btn btn">на все случаи</a>
+                <a href="" class="promo__btn btn" aria-label="Инструмент на все случаи">на все случаи</a>
+                <div class="promo__icon-wrap">
+                    <img src="img/icons/icon-instruments.svg" alt="" class="promo__icon" width="75px" height="61px">
+                </div>
             </div>
             <div class="promo__item promo__item_violet">
                 <h3 class="promo__title">Техника</h3>
-                <a href="" class="promo__btn btn">для стройки</a>
+                <a href="" class="promo__btn btn" aria-label="Техника для стройки">для стройки</a>
+                <div class="promo__icon-wrap">
+                    <img src="img/icons/icon-technics.svg" alt="" class="promo__icon" width="78px" height="62px">
+                </div>
             </div>
             <div class="promo__item promo__item_green">
                 <h3 class="promo__title">Скидки 50%</h3>
-                <a href="" class="promo__btn btn">на 350 товаров</a>
+                <a href="" class="promo__btn btn" aria-label="Скидки 50% на 350 товаров">на 350 товаров</a>
+                <div class="promo__icon-wrap">
+                    <img src="img/icons/icon-discounts.svg" alt="" class="promo__icon" width="59px" height="72px">
+                </div>
             </div>
             <div class="promo__item promo__item_yellow">
                 <h3 class="promo__title">Доставка</h3>
-                <a href="" class="promo__btn btn">бесплатно</a>
+                <a href="" class="promo__btn btn" aria-label="Доставка бесплатно">бесплатно</a>
+                <div class="promo__icon-wrap">
+                    <img src="img/icons/icon-delivery.svg" alt="" class="promo__icon" width="78" height="63">
+                </div>
             </div>
-            <div class="promo__slider slider">
-
+            <div class="promo__slider slider" aria-label="Слайдер">
+                <figure class="slider__slide slider__slide_active">
+                    <img src="img/slider/slide-1.jpg" alt="Дрели" class="slider__image" width="620" height="266">
+                    <h3 class="slider__title">Дрели</h3>
+                    <span class="slider__subtitle">Соседям на радость!</span>
+                    <a href="#" class="slider__btn_open-all btn btn_red">Открыть каталог</a>
+                </figure>
+                <figure class="slider__slide">
+                    <img src="img/slider/slide-2.jpg" alt="Перфораторы" class="slider__image" width="620" height="266">
+                    <h3 class="slider__title">Перфораторы</h3>
+                    <span class="slider__subtitle">Настоящие мужские игрушки</span>
+                    <a href="#" class="slider__btn_open-all btn btn_red">Открыть каталог</a>
+                </figure>
+                <button class="slider__control slider__control_prew" type="button" aria-label="Предыдущий слайд"></button>
+                <button class="slider__control slider__control_next" type="button" aria-label="Следующий слайд"></button>
+                <ul class="slider__paginator">
+                    <li><button class="slider__tab slider__tab_active" type="button" aria-label="Слайд 1"></button></li>
+                    <li><button class="slider__tab" type="button" aria-label="Слайд 2"></button></li>
+                </ul>
             </div>
         </section>
         
