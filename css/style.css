@@ -137,7 +137,21 @@ button {
     line-height: 24px;
     font-weight: 400;
 }
-
+.logo {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 0 0 #b62530;
+    background-color: #ee3643;
+}
+.logo:hover,
+.logo:focus {
+    background-color: #ca2c37;
+}
+.logo:active {
+    background-color: #ba2732;
+}
 
 /* Header styles */
 /* Top part */
@@ -157,21 +171,6 @@ button {
 .header-top__icon {
     fill: #ffffff;
     opacity: 0.3;
-}
-.logo {
-    width: 220px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 5px 0 0 #b62530;
-    background-color: #ee3643;
-}
-.logo:hover,
-.logo:focus {
-    background-color: #ca2c37;
-}
-.logo:active {
-    background-color: #ba2732;
 }
 .header-top__logo {
     height: 42px;
@@ -441,6 +440,7 @@ button {
     top: 23px;
     right: 28px;
 }
+
 /* Promo Slider */
 .promo__slider {
     grid-column: 1 / 3;
@@ -903,3 +903,75 @@ button {
     width: 300px;
     margin-top: 40px;
 }
+
+
+/* Footer styles */
+/* Top part */
+.footer-top {
+    min-height: 193px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #32425c;
+}
+.footer-top .container {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer-top__info {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top__logo {
+    height: 63px;
+}
+.footer-top__address {
+    margin: 33px 0;
+    margin-left: 3px;
+    font-style: normal;
+}
+.footer-top__phone {
+    color: inherit;
+}
+.footer-top__nav-wrapper {
+    width: 550px;
+}
+.footer-top__nav {
+    margin: 0;
+    margin-top: 38px;
+    margin-bottom: 34px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav__item {
+    margin: 0;
+}
+.top-nav__link {
+    color: #ffffff;
+}
+.bottom-nav {
+    margin-top: 34px;
+    margin-left: 25px;
+}
+.bottom-nav__item {
+    margin: 0;
+}
+.bottom-nav__link {
+    color: #ffd180;
+}
+.top-nav__link:hover,
+.top-nav__link:focus,
+.bottom-nav__link:hover,
+.bottom-nav__link:focus {
+    text-decoration: underline;
+}
+.top-nav__link:active,
+.bottom-nav__link:active {
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+/* Bottom part */
