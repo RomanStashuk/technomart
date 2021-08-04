@@ -125,14 +125,17 @@ button {
     z-index: 1;
 }
 .title {
+    margin: 0;
     font-size: 30px;
     line-height: 30px;
+    font-weight: 400;
     text-transform: uppercase;
 }
 .text {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 13px;
     line-height: 24px;
+    font-weight: 400;
 }
 
 
@@ -555,9 +558,7 @@ button {
 }
 .popular__title {
     width: 600px;
-    margin: 0;
     margin-left: 28px;
-    font-weight: 400;
     color: #32425c;   
 }
 .popular__btn {
@@ -757,12 +758,9 @@ button {
     align-items: flex-start;
 }
 .services__title {
-    margin: 0;
     margin-bottom: 25px;
     font-size: 30px;
     line-height: 30px;
-    font-weight: 400;
-    text-transform: uppercase;
 }
 .services__text {
     width: 415px;
@@ -838,6 +836,7 @@ button {
     text-transform: uppercase;
 }
 .service__text {
+    width: 390px;
     position: relative;
     z-index: 2;
 }
@@ -850,4 +849,57 @@ button {
 .service__btn {
     width: 195px;
     margin-top: 30px;
+}
+
+/* Info section */
+.container_info {
+    padding-top: 80px;
+    padding-bottom: 86px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.info__text {
+    margin: 25px 0;
+}
+/* About-us */
+.about-us {
+    width: 540px;
+}
+.about-us__list {
+    margin-top: -5px;
+    padding-left: 35px;
+    list-style: none;
+}
+.about-us__item {
+    margin: 20px 0;
+    position: relative;
+    font-size: 18px;
+    line-height: 20px;
+}
+.about-us__item::before {
+    content: "";
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 9px;
+    left: -35px;
+    background-color: #ee3643;
+}
+.about-us__btn {
+    width: 220px;
+    margin-top: 36px;
+}
+/* Contacts */
+.contacts {
+    width: 300px;
+}
+.contacts__map {
+    width: 300px;
+    height: 158px;
+    margin: 0;
+    margin-top: 30px;
+}
+.contacts__btn {
+    width: 300px;
+    margin-top: 40px;
 }
