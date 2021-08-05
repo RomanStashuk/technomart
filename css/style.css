@@ -102,6 +102,7 @@ button {
     line-height: 18px;
     text-transform: uppercase;
     color: #ffffff;
+    outline: none;
 }
 .btn_red {
     background-color: #ee3643;
@@ -238,6 +239,7 @@ button {
 .header-top__link:hover,
 .header-top__link:focus {
     background-color: #212a3a;
+    outline: none;
 }
 .header-top__link:hover .header-top__icon,
 .header-top__link:focus .header-top__icon {
@@ -332,6 +334,7 @@ button {
 .user-block__link:hover,
 .user-block__link:focus {
     color: #ee3643;
+    outline: none;
 }
 .user-block__link:active {
     color: #c5c5c5;
@@ -374,6 +377,7 @@ button {
 .main-nav__link:hover,
 .main-nav__link:focus {
     background-color: #293449;
+    outline: none;
 }
 .main-nav__link:active {
     background-color: #1d2739;
@@ -814,6 +818,7 @@ button {
     border-bottom: 1px solid #293449;
     color: #ffffff;
     background-color: #293449;
+    outline: none;
 }
 .services__btn:active,
 .services__btn_active {
@@ -972,6 +977,7 @@ button {
 .bottom-nav__link:hover,
 .bottom-nav__link:focus {
     text-decoration: underline;
+    outline: none;
 }
 .top-nav__link:active,
 .bottom-nav__link:active {
@@ -1020,6 +1026,12 @@ button {
     align-items: center;
     background-color: #212a3a;
 }
+.social__link:hover,
+.social__link:focus,
+.social__link:active {
+    background-color: #ee3643;
+    outline: none;
+}
 .footer-bottom__info {
     width: 300px;
     padding-right: 10px;
@@ -1028,6 +1040,14 @@ button {
 }
 .footer-bottom__link {
     color: #ffd180;
+}
+.footer-bottom__link:hover,
+.footer-bottom__link:focus {
+    text-decoration: underline;
+    outline: none;
+}
+.footer-bottom__link:active {
+    color: #ee3643;
 }
 
 
