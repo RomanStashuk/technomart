@@ -975,3 +975,52 @@ button {
 }
 
 /* Bottom part */
+.footer-bottom {
+    font-size: 16px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #293449;
+}
+.footer-bottom .container {
+    min-height: 107px;
+}
+.footer-bottom__copyright {
+    width: 240px;
+    padding-left: 2px;
+    margin-right: 60px;
+}
+.footer-bottom__social {
+    width: 310px;
+    margin: 0;
+    margin-right: 28px;
+    padding: 0;
+}
+.social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.social__item {
+    margin-right: 5px;
+}
+.social__item:last-child {
+    margin-right: 0;
+}
+.social__link {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212a3a;
+}
+.footer-bottom__info {
+    width: 300px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-bottom__link {
+    color: #ffd180;
+}
