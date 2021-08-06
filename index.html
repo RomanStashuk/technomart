@@ -459,7 +459,7 @@
                 </label>
             </div>
             <div class="write-us__btn-wrap">
-                <button class="btn btn_red write-us__btn" type="submit">Отправить</button>
+                <button class="btn btn_red write-us__btn btn_modal" type="submit">Отправить</button>
             </div>
         </form>
         <button class="modal__close" type="button" aria-label="Закыть модальное окно"></button>
@@ -472,6 +472,13 @@
         <button class="modal__close" type="button" aria-label="Закыть модальное окно"></button>
     </div>
 
-    <div class="modal cart"></div>
+    <div class="modal cart">
+        <h2 class="modal__title">Товар добавлен в корзину!</h2>
+        <div class="cart__buttons">
+            <a class="btn btn_red cart__btn">Оформить заказ</a>
+            <button class="btn cart__btn cart__btn_continue btn_modal">Продолжиь покупки</button>
+        </div>
+        <button class="modal__close" type="button" aria-label="Закыть модальное окно"></button>
+    </div>
 </body>
 </html>
