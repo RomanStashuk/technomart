@@ -636,28 +636,20 @@ button {
 }
 .popular-products__price_current {
     width: 134px;
-    border-radius: 3px;
+    height: 38px;
+    border-radius: 3px 0 0 3px;
     position: relative;
     color: #ffffff;
     background-color: #ee3643;
 }
-.popular-products__price_current::after {
-    content: "";
-    width: 20px;
-    height: 38px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-    background-color: #ffffff;
-}
+
 .popular-products__price_current::after {
     content: "";
     width: 0;
-	height: 0;
-	border-top: 19px solid transparent;
+	height: 100%;
+	border-top: 19px solid #ffffff;
 	border-left: 20px solid #ee3643;
-	border-bottom: 19px solid transparent;
+	border-bottom: 19px solid #ffffff;
     position: absolute;
     top: 0;
     right: -7px;
@@ -1198,7 +1190,6 @@ button {
     font-size: 14px;
     line-height: 18px;
 }
-
 .cart__btn_continue {
     margin-left: 20px;
     color: #000000;
