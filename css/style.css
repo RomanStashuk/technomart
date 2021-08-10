@@ -634,38 +634,38 @@ button {
 
 
 /* Popular products */
-.popular-products__list {
+.products__list {
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
 }
-.popular-products__item {
+.products__item {
     width: 220px;
     height: 320px;
+    margin-bottom: 20px;
     border: 1px solid #eaeaea;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 700;
 }
-.popular-products__item:hover {
+.products__item:hover {
     box-shadow: 0px 10px 25px rgba(41, 52, 73, 0.5);
 }
-.popular-products__info {
+.products__info {
     padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.popular-products__title {
+.products__title {
     margin: 0;
     margin-top: 8px;
     margin-bottom: 2px;
@@ -673,17 +673,17 @@ button {
     font-size: 18px;
     text-align: center;
 }
-.popular-products__title a {
+.products__title a {
     color: #000000;
 }
-.popular-products__title a:hover,
-.popular-products__title a:focus {
+.products__title a:hover,
+.products__title a:focus {
     opacity: 0.6;
 }
-.popular-products__title a:active {
+.products__title a:active {
     opacity: 0.8;
 }
-.popular-products__price {
+.products__price {
     height: 38px;
     display: flex;
     justify-content: center;
@@ -691,11 +691,11 @@ button {
     font-size: 17px;
     line-height: 18px;
 }
-.popular-products__price_old {
+.products__price_old {
     text-decoration: line-through;
     color: #a9a9a9;
 }
-.popular-products__price_current {
+.products__price_current {
     width: 134px;
     height: 38px;
     border-radius: 3px 0 0 3px;
@@ -704,7 +704,7 @@ button {
     background-color: #ee3643;
 }
 
-.popular-products__price_current::after {
+.products__price_current::after {
     content: "";
     width: 0;
 	height: 100%;
@@ -716,19 +716,19 @@ button {
     right: -7px;
     z-index: 2;
 }
-.popular-products__btn {
+.products__btn {
     width: 135px;
     height: 38px;
     font-family: "Cuprum", "Arial", sans-serif;
     font-weight: 400;
 }
-.popular-products__btn_buy {
+.products__btn_buy {
     margin-bottom: 7px;
     position: relative;
     background-color: #63a63e;
     border-bottom: 3px solid #367315;
 }
-.popular-products__btn_buy::before {
+.products__btn_buy::before {
     content: "";
     width: 15px;
     height: 15px;
@@ -737,37 +737,37 @@ button {
     background: url(../img/icons/icon-cart.svg);
     opacity: 0.3;
 }
-.popular-products__btn_buy:hover::before {
+.products__btn_buy:hover::before {
     opacity: 1;
 }
-.popular-products__btn_buy:hover {
+.products__btn_buy:hover {
     background-color: #5fbb2d;
 }
-.popular-products__btn_buy:active {
+.products__btn_buy:active {
     background-color: #518534;
     border-color: #518534;
 }
-.popular-products__btn_to-bookmark {
+.products__btn_to-bookmark {
     border: 3px solid #63a63e;
     color: #32425c;
 }
-.popular-products__btn_to-bookmark:hover {
+.products__btn_to-bookmark:hover {
     border-color: #32425c;
 }
-.popular-products__btn_to-bookmark:active {
+.products__btn_to-bookmark:active {
     border-color: rgba(50, 66, 92, 0.3);
     color: rgba(50, 66, 92, 0.3);
 }
-.popular-products__buttons {
+.products__buttons {
     height: 170px;
     padding-top: 45px;
     flex-direction: column;
     display: none;
 }
-.popular-products__item:hover .popular-products__buttons {
+.products__item:hover .products__buttons {
     display: flex;
 }
-.popular-products__item:hover .popular-products__image {
+.products__item:hover .products__image {
     display: none;
 }
 
@@ -1170,9 +1170,26 @@ button {
     background-color: #f2f6f8;
 }
 
-
-
-
+/* Filter */
+.filter {
+    width: 220px;
+    margin-right: 20px;
+}
+.title_aside {
+    min-height: 38px;
+    padding: 10px 18px;
+    display: flex;
+    align-items: center;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: #f7f3ec;
+}
+.prosucts-wrapper {
+    width: 700px;
+}
 
 
 
