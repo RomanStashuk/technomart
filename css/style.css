@@ -1215,6 +1215,7 @@ button {
    font-family: "PT Sans", "Arial", sans-serif;
    font-size: 13px;
    line-height: 18px;
+   text-transform: uppercase;
    color: #000000;
 }
 .pagination__link_current {
@@ -1237,9 +1238,18 @@ button {
 .pagination__link:active {
     border-color: #ee3643;
 }
-
-
-
+/* Main-info */
+.main-info {
+    padding: 65px 0 55px;
+    background-color: #f2f6f8;
+}
+.main-info .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main-info__text {
+    margin-top: 25px;
+}
 
 /* Modal blocks */
 .modal {
