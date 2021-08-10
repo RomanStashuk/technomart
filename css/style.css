@@ -634,6 +634,7 @@ button {
 
 
 /* Popular products */
+/* Products */
 .products__list {
     width: 100%;
     margin: 0;
@@ -1165,6 +1166,7 @@ button {
     width: 940px;
     min-height: 89px;
     margin: 0 auto;
+    margin-bottom: 10px;
     padding: 28px 30px;
     color: #32425c;
     background-color: #f2f6f8;
@@ -1190,7 +1192,51 @@ button {
 .prosucts-wrapper {
     width: 700px;
 }
-
+/* Sort */
+.sort {
+    margin-bottom: 20px;
+}
+/* Pagination */
+.pagination {
+    margin: 0;
+    padding: 32px 0 60px 0;
+    display: flex;
+    list-style: none;
+}
+.pagination__link {
+   width: 38px;
+   height: 38px;
+   margin-right: 10px;
+   border: 1px solid #e5e5e5;
+   border-radius: 3px; 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: "PT Sans", "Arial", sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+   color: #000000;
+}
+.pagination__link_current {
+    border: none;
+    color: #ffffff;
+    background-color: #ee3643;
+}
+.pagination__link_next {
+    min-width: 140px;
+}
+.pagination__link_prew {
+    min-width: 140px;
+    display: none;
+}
+.pagination__link:hover,
+.pagination__link:focus {
+    border-color: #bdc6ca;
+    outline: none; 
+}
+.pagination__link:active {
+    border-color: #ee3643;
+}
 
 
 
