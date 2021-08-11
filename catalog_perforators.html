@@ -124,6 +124,63 @@
         <div class="container">
             <aside class="filter">
                 <h2 class="filter__title title_aside">Фильтр:</h2>
+                <form action="#" class="filter__form" method="GET">
+                    <fieldset class="filter__group">
+                        <legend class="filter__legend">Цена:</legend>
+                        <div class="filter__price-range price-range">
+                            <div class="price-range__line">
+                                <div class="price-range__slider price-range__slider_min"></div>
+                                <div class="price-range__slider price-range__slider_max"></div>
+                            </div>
+                        </div>
+                        <div class="price-range__wrap">
+                            <label for="f_min-price" class="visually-hidden">Цена от</label>
+                            <input type="number" name="min-price" id="f_min-price" class="price-range__input price-range__input_min" min="0" max="50000" value="0">
+                            —
+                            <label for="f_max-price" class="visually-hidden">Цена до</label>
+                            <input type="number" name="max-price" id="f_max-price" class="price-range__input price-range__input_max" min="1" max="50000" value="30000">
+                        </div>
+                    </fieldset>
+                    <fieldset class="filter__group">
+                        <legend class="filter__legend">Производители:</legend>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <input type="checkbox" class="visually-hidden filter__input filter__input_checkbox" id="f_bosch" name="venor_bosch" checked>
+                                <label for="f_bosch" class="filter__label filter__label_checkbox">Bosch</label>
+                            </li>
+                            <li class="filter__item">
+                                <input type="checkbox" class="visually-hidden filter__input filter__input_checkbox" id="f_interscol" name="venor_interscol">
+                                <label for="f_interscol" class="filter__label filter__label_checkbox">Интерскол</label>
+                            </li>
+                            <li class="filter__item">
+                                <input type="checkbox" class="visually-hidden filter__input filter__input_checkbox" id="f_makita" name="venor_makita" checked>
+                                <label for="f_makita" class="filter__label filter__label_checkbox">Makita</label>
+                            </li>
+                            <li class="filter__item">
+                                <input type="checkbox" class="visually-hidden filter__input filter__input_checkbox" id="f_dewalt" name="venor_dewalt">
+                                <label for="f_dewalt" class="filter__label filter__label_checkbox">DeWALT</label>
+                            </li>
+                            <li class="filter__item">
+                                <input type="checkbox" class="visually-hidden filter__input filter__input_checkbox" id="f_hitachi" name="venor_hitachi">
+                                <label for="f_hitachi" class="filter__label filter__label_checkbox">Hitachi</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="filter__group">
+                        <legend class="filter__legend">Питание:</legend>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <input type="radio" class="visually-hidden filter__input filter__input_radio" id="f_acum" name="power-supply" value="accumulator" checked>
+                                <label for="f_acum" class="filter__label filter__label_radio">Аккумуляторные</label>
+                            </li>
+                            <li class="filter__item">
+                                <input type="radio" class="visually-hidden filter__input filter__input_radio" id="f_network" name="power-supply" value="power-network">
+                                <label for="f_network" class="filter__label filter__label_radio">Сетевые</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button class="filer__btn btn">Показать</button>
+                </form>
             </aside>
             <div class="prosucts-wrapper">
                 <aside class="sort">
