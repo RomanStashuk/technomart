@@ -1245,6 +1245,7 @@ main .container {
     top: 30px;
     background-color: #ababab;
     cursor: pointer;
+    box-shadow: 0 2px #e0ddd8;
 }
 .price-range__slider_min {
     margin-left: 20px;
